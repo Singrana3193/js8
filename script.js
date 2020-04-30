@@ -17,13 +17,13 @@ let stuffs = [
     {name:'Pioneer DDJ PROSTROBE', price: 4599, volume:6},
     {name:'Pioneer DDJ WEGO4', price: 755, volume:25},
     {name:'Pioneer DDJ WEGO4', price: 799, volume:475},
-    //{name:'Pioneer DDJ MIOR', price: 199, volume:0}
+    {name:'Pioneer DDJ MIOR', price: 199, volume:0}
 ]
 
 function returnStuffs(arrayOfItems){
     arrayOfItems.forEach((obj, index) => {
     let currStuff = document.createElement('li');
-    (index%2)==0 ? document.querySelector('#stuff > li:last-child').style.background = '#F3F3F3':document.querySelector('#stuff > li:last-child').style.background = '#fff' ;
+    (index%2)==0 ? currStuff.style.background = '#F3F3F3': currStuff.style.background = '#fff' ;
     currStuff.innerHTML = (`${obj.name},  цена --  ${obj.price}грн,  кол-во на остатке -- ${obj.volume}`) ;
     return stuff.append(currStuff);
     });
@@ -39,4 +39,3 @@ function arrParser(arr){
 };
 
 console.log(arrParser(array));
-document.querySelector('#stuff > li:nth-child(even)').style.background = '#F3F3F3';
