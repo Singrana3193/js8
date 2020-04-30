@@ -1,0 +1,42 @@
+.body{
+    background-color: burlywood;
+    font-size: 1.3em;
+}
+.container{
+    width: 1700px;
+    height: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: white;
+}
+
+.stuff-list{
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 2%;
+}
+
+.stuff-list li:nth-child(even) {
+    background: #F3F3F3;
+}
+
+.button{
+    padding: 16px 16px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ffbb42;
+    border: 1px solid #e7ad48;
+    border-radius:10%; 
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.button:hover{
+    color: #ffbb42;
+    background-color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
