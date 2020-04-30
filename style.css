@@ -16,10 +16,6 @@
     padding-top: 2%;
 }
 
-.stuff-list li:nth-child(even) {
-    background: #F3F3F3;
-}
-
 .button{
     padding: 16px 16px;
     margin: auto;
